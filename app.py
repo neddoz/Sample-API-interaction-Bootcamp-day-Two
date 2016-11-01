@@ -13,6 +13,9 @@ import sys
 import pandas as pd
 import datetime
 
+# to ensure the corect encoding
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 def table_InstaData(mediaList, query_lat, query_lon):
     """
